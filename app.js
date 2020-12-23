@@ -5,6 +5,7 @@ const menu = [
         id: 1,
         title: "Pancakes",
         category: "breakfast",
+        price: 8.95,
         img: "Pancakes-recipe-1200.jpg",
         desc: `A stack of eight buttery, fluffy pancakes makes the perfect breakfast for the hungry individual.`,
     },
@@ -12,6 +13,7 @@ const menu = [
         id: 2,
         title: "Crepes",
         category: "breakfast",
+        price: 14.00,
         img: "/crepes.jpg",
         desc: `A plate of yummy, savory crepes if that's your sort of thing.`,
     },
@@ -19,6 +21,7 @@ const menu = [
         id: 3,
         title: "Omelette",
         category: "breakfast",
+        price: 10.95,
         img: "omelette-3cba9f8.jpg",
         desc: `You like omlettes? This one is pretty good.`,
     },
@@ -26,6 +29,7 @@ const menu = [
         id: 4,
         title: "Bacon",
         category: "breakfast",
+        price: 5.00,
         img: "bacon.jpg",
         desc: `Crispy bacon.`,
     },
@@ -33,6 +37,7 @@ const menu = [
         id: 5,
         title: "Susage",
         category: "breakfast",
+        price: 5.00,
         img: "Breakfast-Sausages.jpg",
         desc: `Nice susage.`,
     },
@@ -40,6 +45,7 @@ const menu = [
         id: 6,
         title: "Hot wings",
         category: "lunch",
+        price: 9.99,
         img: "classic-buffalo-wings.jpg",
         desc: `Some really great spicy hotwings with ranch.`,
 
@@ -48,6 +54,7 @@ const menu = [
         id: 7,
         title: "Hamburger",
         category: "lunch",
+        price: 11.00,
         img: "Hamburger.jpg",
         desc: `Our famous juicy hamburger`,
     },
@@ -55,6 +62,7 @@ const menu = [
         id: 8,
         title: "Chicken Fried Steak",
         category: "supper",
+        price: 13.99,
         img: "Chickenfriedsteak.jpg",
         desc: `Savory chicken fried steak with veggies`,
     },
@@ -62,6 +70,7 @@ const menu = [
         id: 9,
         title: "Homemade cherry pie",
         category: "dessert",
+        price: 6.00,
         img: "homemade-cherry-pie-2.jpg",
         desc: `Our famous cherry pie`,
     },
@@ -86,6 +95,7 @@ function displayMenuItems(menuItems) {
         <div class="item-info">
         <header>
         <h4>${item.title}</h4>
+        <h4 class="price"> $${item.price}</h4>
         </header>
         <p class="descript">
         ${item.desc}
