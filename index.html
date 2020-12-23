@@ -4,6 +4,7 @@
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Aladin">
     <link rel="stylesheet" href="/menu.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <title>Gregory's Diner</title>
 </head>
 <body>
@@ -14,18 +15,19 @@
         </div>
 
         <div class="options">
-            <button type="button" class="option-btn" id="All">All</button>
-            <button type="button" class="option-btn" id="breakfast">Breakfast</button>
-            <button type="button" class="option-btn" id="breakfast">Lunch</button>
-            <button type="button" class="option-btn" id="breakfast">Supper</button>
-            <button type="button" class="option-btn" id="breakfast">Dessert</button>
+            <button type="button" class="option-btn" data-id="all">All</button>
+            <button type="button" class="option-btn"  data-id="breakfast">Breakfast</button>
+            <button type="button" class="option-btn" data-id="lunch">Lunch</button>
+            <button type="button" class="option-btn" data-id="supper">Supper</button>
+            <button type="button" class="option-btn" data-id="dessert">Dessert</button>
         </div>
         <div class="center">
             <article class="item">
                 <img src="Pancakes-recipe-1200.jpg" alt="menu-item" class="photo">
                 <div class="item-info">
                     <header>
-                        <h4>Pancakes: $8.95</h4>
+                        <h4>Pancakes</h4>
+                        <h4 class="price">$8.95</h4>
                     </header>
                     <p class="descript">
                         A stack of eight buttery, fluffy pancakes makes the perfect breakfast for the hungry individual.
@@ -37,7 +39,8 @@
                 <img src="/crepes.jpg" alt="menu-item" class="photo">
                 <div class="item-info">
                     <header>
-                        <h4>Crepes: $12.99</h4>
+                        <h4>Crepes</h4>
+                        <h4 class="price">$14.00</h4>
                     </header>
                     <p class="descript">
                         A plate of yummy, savory crepes if that's your sort of thing.
@@ -49,7 +52,8 @@
                 <img src="omelette-3cba9f8.jpg" alt="menu-item" class="photo">
                 <div class="item-info">
                     <header>
-                        <h4>Omelette: $10.95</h4>
+                        <h4>Omelette</h4>
+                        <h4 class="price">$10.95</h4>
                     </header>
                     <p class="descript">
                        You like omlettes? This one is pretty good.
@@ -61,10 +65,11 @@
                 <img src="bacon.jpg" alt="menu-item" class="photo">
                 <div class="item-info">
                     <header>
-                        <h4>Bacon: $5.00</h4>
+                        <h4>Bacon</h4>
+                        <h4 class="price">$5.00</h4>
                     </header>
                     <p class="descript">
-                        Bacon is $1 a slice.
+                        Bacon is $1.00 a slice.
                     </p>
                 </div>
             </article>
@@ -74,6 +79,7 @@
                 <div class="item-info">
                     <header>
                         <h4>Susage: $5.00</h4>
+                        <h4 class="price">$5.00</h4>
                     </header>
                     <p class="descript">
                         Susage is $1.00 a link.
@@ -82,4 +88,6 @@
             </article>
         </div>
     </section>
+
+    <script src="menu.js"></script>
 </body>
